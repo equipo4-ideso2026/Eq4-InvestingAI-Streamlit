@@ -26,7 +26,11 @@ numpy==1.26.4
 plotly==5.24.1
 
 # Ingesta de mercado (Notebook 1)
-yfinance==0.2.44
+# 1.5.1+ es OBLIGATORIO: incluye curl_cffi, que simula un navegador real
+# para no ser bloqueado por la detección de bots de Yahoo Finance en IPs
+# de datacenter como las de Streamlit Cloud (versiones 0.2.x antiguas
+# fallan con 'Expecting value: line 1 column 1 (char 0)').
+yfinance==1.5.1
 
 # Clasificador SVC (Notebook 2)
 scikit-learn==1.5.1
