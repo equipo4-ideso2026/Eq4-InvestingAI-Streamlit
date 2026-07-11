@@ -1,0 +1,18 @@
+# --- Seguridad de Streamlit (CRÍTICO) ---
+.streamlit/secrets.toml
+
+# --- Archivos temporales de Python ---
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Archivos del sistema operativo ---
+.DS_Store
+Thumbs.db
