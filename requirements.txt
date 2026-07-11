@@ -1,0 +1,35 @@
+# requirements.txt — InvestAI (Streamlit)
+# ==========================================
+# Instalado automáticamente por Streamlit Community Cloud a partir de
+# este archivo. Se usan versiones EXACTAS (==) en vez de rangos (>=) para
+# que el resolver de pip no tenga que probar múltiples combinaciones.
+#
+# IMPORTANTE: Streamlit Community Cloud puede usar por defecto una
+# versión de Python más nueva que la que TensorFlow soporta (ej. 3.14).
+# En el dashboard de tu app → Settings → Advanced settings → "Python
+# version", selecciona manualmente **Python 3.12** para que coincida
+# con los wheels fijados aquí.
+
+streamlit==1.38.0
+
+# Base de datos
+pymongo[srv]==4.8.0
+
+# Datos y cálculo
+pandas==2.2.2
+numpy==1.26.4
+
+# Gráficos
+plotly==5.24.1
+
+# Ingesta de mercado (Notebook 1)
+yfinance==0.2.44
+
+# Clasificador SVC (Notebook 2)
+scikit-learn==1.5.1
+
+# Redes recurrentes: LSTM / BiLSTM / GRU / SimpleRNN (Notebooks 3-6)
+# tensorflow-cpu es más liviano que 'tensorflow' completo — no hay GPU
+# en Streamlit Community Cloud, así que no hace falta la variante GPU.
+# 2.21.0 es la versión más reciente con wheel confirmado para cp312.
+tensorflow-cpu==2.21.0
