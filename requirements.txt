@@ -1,6 +1,29 @@
-streamlit>=1.30.0
-pymongo[srv]>=4.6.0
-plotly>=5.18.0
-pandas>=2.0.0
-numpy>=1.24.0
-matplotlib>=3.7.0
+# requirements.txt — InvestAI (Streamlit)
+# ==========================================
+# Instalado automáticamente por Streamlit Community Cloud a partir de
+# este archivo. Se usan límites inferiores (>=) en vez de versiones
+# exactas para reducir conflictos de resolución, salvo donde se necesita
+# fijar un máximo por compatibilidad conocida.
+
+streamlit>=1.36
+
+# Base de datos
+pymongo[srv]>=4.6
+
+# Datos y cálculo
+pandas>=2.0
+numpy>=1.26,<2.0
+
+# Gráficos
+plotly>=5.18
+
+# Ingesta de mercado (Notebook 1)
+yfinance>=0.2.40
+
+# Clasificador SVC (Notebook 2)
+scikit-learn>=1.3
+
+# Redes recurrentes: LSTM / BiLSTM / GRU / SimpleRNN (Notebooks 3-6)
+# tensorflow-cpu es más liviano que 'tensorflow' completo — no hay GPU
+# en Streamlit Community Cloud, así que no hace falta la variante GPU.
+tensorflow-cpu>=2.16,<2.18
