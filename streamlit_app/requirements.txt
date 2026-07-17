@@ -1,0 +1,4 @@
+streamlit>=1.32
+pymongo[srv]>=4.6
+pandas>=2.0
+plotly>=5.20
