@@ -14,7 +14,7 @@ from db import get_db, TICKERS, EMPRESAS, COL_PRECIOS, COL_PREDICCIONES, COL_MET
     COL_NOTICIAS, COL_ESTRATEGIAS, COL_BACKTESTS, COL_ORDENES
 
 st.set_page_config(
-    page_title="InvestAI — Ernesto Investing AI",
+    page_title="InvestAI — Investing AI",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded",
