@@ -25,7 +25,7 @@ if "logueado" not in st.session_state:
     st.session_state.logueado = False
 
 if not st.session_state.logueado:
-    st.title("📈 InvestAI — Ernesto Investing AI")
+    st.title("📈 InvestAI — Investing AI")
     st.caption("Sistema de Predicción Bursátil Inteligente (SPBI) · iDeSo · UNMSM")
     st.markdown("---")
     col1, col2, col3 = st.columns([1, 1.2, 1])
@@ -51,7 +51,7 @@ if "capital" not in st.session_state:
 
 with st.sidebar:
     st.markdown("## 📈 InvestAI")
-    st.caption("Ernesto Investing AI · SPBI")
+    st.caption("Investing AI · SPBI")
     st.markdown("---")
 
     ticker_sel = st.selectbox(
