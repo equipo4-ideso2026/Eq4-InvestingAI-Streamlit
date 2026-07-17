@@ -1,5 +1,5 @@
 """
-app.py — Página de inicio de Ernesto Investing AI (versión Streamlit).
+app.py — Página de inicio de Investing AI (versión Streamlit).
 
 Sustituye a index.html + Notebook11 (FastAPI + ngrok): esta app se conecta
 DIRECTO a MongoDB Atlas con pymongo, sin ningún servidor intermedio que
