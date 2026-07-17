@@ -1,5 +1,5 @@
 """
-app.py — Página de inicio de Ernesto Investing AI (versión Streamlit).
+app.py — Página de inicio de Investing AI (versión Streamlit).
 
 Sustituye a index.html + Notebook11 (FastAPI + ngrok): esta app se conecta
 DIRECTO a MongoDB Atlas con pymongo, sin ningún servidor intermedio que
@@ -14,7 +14,7 @@ from db import get_db, TICKERS, EMPRESAS, COL_PRECIOS, COL_PREDICCIONES, COL_MET
     COL_NOTICIAS, COL_ESTRATEGIAS, COL_BACKTESTS, COL_ORDENES
 
 st.set_page_config(
-    page_title="InvestAI — Ernesto Investing AI",
+    page_title="InvestAI — Investing AI",
     page_icon="📈",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -25,7 +25,7 @@ if "logueado" not in st.session_state:
     st.session_state.logueado = False
 
 if not st.session_state.logueado:
-    st.title("📈 InvestAI — Ernesto Investing AI")
+    st.title("📈 InvestAI — Investing AI")
     st.caption("Sistema de Predicción Bursátil Inteligente (SPBI) · iDeSo · UNMSM")
     st.markdown("---")
     col1, col2, col3 = st.columns([1, 1.2, 1])
@@ -51,7 +51,7 @@ if "capital" not in st.session_state:
 
 with st.sidebar:
     st.markdown("## 📈 InvestAI")
-    st.caption("Ernesto Investing AI · SPBI")
+    st.caption("Investing AI · SPBI")
     st.markdown("---")
 
     ticker_sel = st.selectbox(
